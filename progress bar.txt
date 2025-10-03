@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+     
+    <body> 
+    <div> <p> LOADING... </p>
+      <div class="container">
+    <div class="progress-bar"></div>
+  </div>
+    </div>
+
+     
+          <!-- <scrip src="new.js"></script>     -->
+    </body>
+    </html>
+
+css property
+.container {
+  width: 400px;
+  height: 20px;
+  background: #ececec;
+  margin: 100px auto;
+  border-radius: 15px;
+  border: 2px solid #555;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #0969d6, rgb(35, 102, 189));
+  animation: progressAni 5s forwards;
+  border-radius: 10px 0 0 10px;
+}
+
+@keyframes progressAni {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 50px;
+
+}
